@@ -1,0 +1,541 @@
+<html>
+	<head>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	
+	</head>
+
+<body>
+	
+	<div ng-app="myapp" ng-controller="myCtrl" ng-init="extracolor='t';six1='0';four1='0';two1='0';one1='0';zero1='0';six2='0';four2='0';two2='0';one2='0';zero2='0'">
+	
+		<div class="container">
+		
+			<div class="row">
+						
+							<center>
+							
+							<button type="button" class="btn btn-warning" ng-click="addme()">Sheet</button>
+							
+							</center>
+							
+					<div class="col-md-6">
+					
+							<h1 class="h">Australia</h1>
+							
+							<table border="1" class="a2 table">
+							
+								<thead>	
+								
+								<tr>
+							
+									<th>Name</th>
+								
+									<th> 6s</th>
+								
+									<th>4s</th>
+								
+									<th>2</th>
+									
+									<th>1</th>
+									
+									<th>0</th>
+									
+									<th>Ind.Runs</th>
+									
+									<th>Ind.Balls</th>
+								
+								</tr>
+								
+								</thead>
+								
+								<tbody>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="text"  ng-model="six1" ng-keyup="addme()"></td>
+									<td><input type="text"  ng-model="four1"></td>
+									<td><input type="text"  ng-model="two1"></td>
+									<td><input type="text"  ng-model="one1"></td>
+									<td><input type="text"  ng-model="zero1"></td>						
+									<td><input type="number"  ng-model="run1"></td>
+									<td><input type="number"  ng-model="balls1"></td>
+								
+								</tr>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="number"  ng-model="six2"></td>
+									<td><input type="number"  ng-model="four2"></td>
+									<td><input type="number"  ng-model="two2"></td>
+									<td><input type="number"  ng-model="one2"></td>
+									<td><input type="number"  ng-model="zero2"></td>						
+									<td><input type="number"  ng-model="run2"></td>
+									<td><input type="number"  ng-model="balls2"></td>
+								
+								</tr>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="number"  ng-model="six3"></td>
+									<td><input type="number"  ng-model="four3"></td>
+									<td><input type="number"  ng-model="two3"></td>
+									<td><input type="number"  ng-model="one3"></td>
+									<td><input type="number"  ng-model="zero3"></td>						
+									<td><input type="number"  ng-model="run3"></td>
+									<td><input type="number"  ng-model="balls3"></td>
+								
+								</tr>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="number"  ng-model="six4"></td>
+									<td><input type="number"  ng-model="four4"></td>
+									<td><input type="number"  ng-model="two4"></td>
+									<td><input type="number"  ng-model="one4"></td>
+									<td><input type="number"  ng-model="zero4"></td>						
+									<td><input type="number"  ng-model="run4"></td>
+									<td><input type="number"  ng-model="balls4"></td>
+								
+								</tr>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="number"  ng-model="six5"></td>
+									<td><input type="number" ng-model="four5"></td>
+									<td><input type="number"  ng-model="two5"></td>
+									<td><input type="number" ng-model="one5"></td>
+									<td><input type="number"  ng-model="zero5"></td>						
+									<td><input type="number"  ng-model="run5"></td>
+									<td><input type="number"  ng-model="balls5"></td>
+								
+								</tr>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="number"  ng-model="six6"></td>
+									<td><input type="number"  ng-model="four6"></td>
+									<td><input type="number"  ng-model="two6"></td>
+									<td><input type="number" ng-model="one6"></td>
+									<td><input type="number"  ng-model="zero6"></td>						
+									<td><input type="number" ng-model="run6"></td>
+									<td><input type="number"  ng-model="balls6"></td>
+								
+								</tr>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="number"  ng-model="six7"></td>
+									<td><input type="number"  ng-model="four7"></td>
+									<td><input type="number"  ng-model="two7"></td>
+									<td><input type="number"  ng-model="one7"></td>
+									<td><input type="number"  ng-model="zero7"></td>						
+									<td><input type="number"  ng-model="run7"></td>
+									<td><input type="number"  ng-model="balls7"></td>
+								
+								</tr>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="number"  ng-model="six8"></td>
+									<td><input type="number"  ng-model="four8"></td>
+									<td><input type="number"  ng-model="two8"></td>
+									<td><input type="number"  ng-model="one8"></td>
+									<td><input type="number"  ng-model="zero8"></td>						
+									<td><input type="number"  ng-model="run8"></td>
+									<td><input type="number"  ng-model="balls8"></td>
+								
+								</tr>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="number"  ng-model="six9"></td>
+									<td><input type="number"  ng-model="four9"></td>
+									<td><input type="number"  ng-model="two9"></td>
+									<td><input type="number"  ng-model="one9"></td>
+									<td><input type="number"  ng-model="zero9"></td>						
+									<td><input type="number"  ng-model="run9"></td>
+									<td><input type="number"  ng-model="balls9"></td>
+								
+								</tr>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="number"  ng-model="six10"></td>
+									<td><input type="number"  ng-model="four10"></td>
+									<td><input type="number"  ng-model="two10"></td>
+									<td><input type="number"  ng-model="one10"></td>
+									<td><input type="number"  ng-model="zero10"></td>						
+									<td><input type="number"  ng-model="run10"></td>
+									<td><input type="number"  ng-model="balls10"></td>
+								
+								</tr>
+								
+								<tr>
+							
+									<td><input type="text"  ></td>
+									<td><input type="number"  ng-model="six11"></td>
+									<td><input type="number"  ng-model="four11"></td>
+									<td><input type="number"  ng-model="two11"></td>
+									<td><input type="number"  ng-model="one11"></td>
+									<td><input type="number"  ng-model="zero11"></td>						
+									<td><input type="number"  ng-model="run11"></td>
+									<td><input type="number"  ng-model="balls11"></td>
+								
+								</tr>
+								
+								<tr>
+									<th>Total</th>
+									<td><input type="number"  ng-model="totalsixs"class="t"></td>
+									<td><input type="number"  ng-model="totalfours"class="t"></td>
+									<td colspan="3"></td>
+									<td><input type="number"  ng-model="totalruns"class="t"></td>
+									<td><input type="number" ng-model="totalballs" class="t"></td>
+								</tr>
+								
+								<tr>
+									<th>Total Over</th>
+									<td colspan="6"></td>
+									<td><input type="number"  class="t"></td>
+								</tr>
+								
+								</tbody>
+								
+							</table>
+					
+					</div>
+					
+				<div class="col-md-6">	
+				
+					<h1 class="h">India</h1>
+					
+					<table border="1" class="table">
+						<thead>
+						<tr>
+							<th>BowlerName</th>
+							
+							<th>Over</th>
+							
+							<th>Run</th>
+							
+							<th>Wicket</th>											
+						</tr>
+						</thead>
+						<tr>
+						
+							<td></td>
+							<td><input type="number"  ng-model="bover1"></td>
+							<td><input type="number"  ng-model="brun1"></td>
+							<td><input type="number"  ng-model="bwicket1"></td>					
+						</tr>
+						
+						<tr>
+						
+							<td></td>
+							<td><input type="number"   ng-model="bover2"></td>
+							<td><input type="number"  ng-model="brun2"></td>
+							<td><input type="number"  ng-model="bwicket2"></td>					
+						</tr>
+						
+						<tr>
+						
+							<td></td>
+							<td><input type="number"  ng-model="bover3"></td>
+							<td><input type="number"  ng-model="brun3"></td>
+							<td><input type="number" ng-model="bwicket3"></td>					
+						</tr>
+						
+						<tr>
+						
+							<td></td>
+							<td><input type="number"  ng-model="bover4"></td>
+							<td><input type="number"   ng-model="brun4"></td>
+							<td><input type="number"  ng-model="bwicket4"></td>				
+						</tr>
+						
+						<tr>
+						
+							<td></td>
+							<td><input type="number"  ng-model="bover5"></td>
+							<td><input type="number"  ng-model="brun5"></td>
+							<td><input type="number" ng-model="bwicket5"></td>					
+						</tr>
+						
+						<tr>
+							<th>Total</th>
+							<td><input type="number" class="t" ng-model="bover"></td>
+							<td><input type="number" class="t" ng-model="brun"></td>
+							<td><input type="number" class="t" ng-model="bwicket"></td>
+						</tr>
+						<tr>
+							<th>Extras</th>
+							
+							<th colspan="4"><input type="number" class="{{extracolor}}" ng-model="extras"></th>
+						</tr>
+					</table>
+					
+				</div>
+					
+			</div>
+					
+
+			<div class="row">
+			
+				<div class="col-md-12">
+				
+					<h2>Inning highlight</h2>
+				</div>	
+				
+				<div class="col-md-4">
+				
+					<div class="list-group">
+					
+					  <a href="#/!" class="list-group-item">
+						First Wicket
+					  </a>
+					  
+					  <a href="#!wicket2" class="list-group-item">Second Wicket</a>
+					  
+					  <a href="#!wicket3" class="list-group-item">Third Wicket</a>
+					  
+					  <a href="#!wicket4" class="list-group-item">Fourth Wicket</a>
+					  
+					  <a href="#!wicket5" class="list-group-item">Fifth Wicket</a>
+					  
+					</div>
+					
+				</div>
+				
+				<div class="col-md-8">
+				
+					<div ng-view></div>
+					
+				</div>
+				
+			</div>
+			
+		</div>	
+		
+	</div>
+		
+	</body>
+	
+</html>	
+
+<style>
+
+body
+{
+	background-color:#333;
+}
+
+.btn
+{
+	padding:10px;
+	margin:15px;
+}
+
+.table
+{
+	width:50%;
+}
+
+.table thead th
+{
+ background-color:#16b83e;
+
+}
+.table th,h2
+{
+	color:#fff;
+}
+.table td input
+{
+	width:50px;
+	border:none;
+	box-shadow:none;
+	background-color:#333;
+	color:#fff;
+}
+
+.t
+{
+	background-color:#fcba03;
+}
+
+.tg
+{
+	background-color:#109e19;
+}
+
+.h
+{
+	background-color:#fff;
+	font-size:15px;
+}
+</style>
+<script>
+
+	var app = angular.module('myapp',["ngRoute"]);
+
+	app.controller('myCtrl', function($scope){
+
+		$scope.addme = function (){
+			
+			//first one//
+			
+			$scope.run1 = $scope.six1*6 + $scope.four1*4 + $scope.two1*2 + $scope.one1*1 + $scope.zero1*0;
+
+			$scope.balls1 = $scope.six1*1 + $scope.four1*1 + $scope.two1*1 + $scope.one1*1 + $scope.zero1*1;
+			
+			//Second one//
+			
+			$scope.run2 = $scope.six2*6 + $scope.four2*4 + $scope.two2*2 + $scope.one2*1 + $scope.zero2*0;
+
+			$scope.balls2 = $scope.six2*1 + $scope.four2*1 + $scope.two2*1 + $scope.one2*1 + $scope.zero2*1;
+			
+			
+			//3rd one//
+			
+			$scope.run3 = $scope.six3*6 + $scope.four3*4 + $scope.two3*2 + $scope.one3*1+ $scope.zero3*0;
+
+			$scope.balls3 = $scope.six3*1 + $scope.four3*1 + $scope.two3*1 + $scope.one3*1 + $scope.zero3*1;
+			
+			//4td one//
+			
+			$scope.run4 = $scope.six4*6 + $scope.four4*4 + $scope.two4*2 + $scope.one4*1+ $scope.zero4*0;
+
+			$scope.balls4 = $scope.six4*1 + $scope.four4*1 + $scope.two4*1 + $scope.one4*1 + $scope.zero4*1;
+			
+			//5td one//
+			
+			$scope.run5 = $scope.six5*6 + $scope.four5*4 + $scope.two5*2 + $scope.one5*1+ $scope.zero5*0;
+
+			$scope.balls5 = $scope.six5*1 + $scope.four5*1 + $scope.two5*1 + $scope.one5*1 + $scope.zero5*1;
+			
+			//6td one//
+			
+			$scope.run6 = $scope.six6*6 + $scope.four6*4 + $scope.two6*2 + $scope.one6*1+ $scope.zero6*0;
+
+			$scope.balls6 = $scope.six6*1 + $scope.four6*1 + $scope.two6*1 + $scope.one6*1 + $scope.zero6*1;
+			
+			//7td one//
+			
+			$scope.run7= $scope.six7*6 + $scope.four7*4 + $scope.two7*2 + $scope.one7*1+ $scope.zero7*0;
+
+			$scope.balls7 = $scope.six7*1 + $scope.four7*1 + $scope.two7*1 + $scope.one7*1 + $scope.zero7*1;
+			
+			//8td one//
+			
+			$scope.run8 = $scope.six8*6 + $scope.four8*4 + $scope.two8*2 + $scope.one8*1+ $scope.zero8*0;
+
+			$scope.balls8 = $scope.six8*1 + $scope.four8*1 + $scope.two8*1 + $scope.one8*1 + $scope.zero8*1;
+			
+			//9td one//
+			
+			$scope.run9 = $scope.six9*6 + $scope.four9*4 + $scope.two9*2 + $scope.one9*1+ $scope.zero9*0;
+
+			$scope.balls9 = $scope.six9*1 + $scope.four9*1 + $scope.two9*1 + $scope.one9*1 + $scope.zero9*1;
+			
+			//10td one//
+			
+			$scope.run10 = $scope.six10*6 + $scope.four10*4 + $scope.two10*2 + $scope.one10*1 + $scope.zero10*0;
+
+			$scope.balls10 = $scope.six10*1 + $scope.four10*1 + $scope.two10*1 + $scope.one10*1 + $scope.zero10*1;
+			
+			//11td one//
+			
+			$scope.run11 = $scope.six11*6 + $scope.four11*4 + $scope.two11*2 + $scope.one11*1 + $scope.zero11*0;
+
+			$scope.balls11 = $scope.six11*1 + $scope.four11*1 + $scope.two11*1 + $scope.one11*1 + $scope.zero11*1;
+			
+			//total runs//
+			
+			$scope.totalruns = $scope.run1*1 + $scope.run2*1 + $scope.run3*1 + $scope.run4*1 + $scope.run5*1 + $scope.run6*1 + $scope.run7*1 + $scope.run8*1 + $scope.run9*1 + $scope.run10*1 + $scope.run11*1;
+			//total balls//
+			
+			$scope.totalballs = $scope.balls1*1 + $scope.balls2*1 + $scope.balls3*1 + $scope.balls4*1 + $scope.balls5*1 + $scope.balls6*1 + $scope.balls7*1 + $scope.balls8*1 + $scope.balls9*1 + $scope.balls10*1 + $scope.balls11*1;
+			
+			//total sixs//
+			
+			$scope.totalsixs = $scope.six1*1 + $scope.six2*1 + $scope.six3*1 + $scope.six4*1 + $scope.six5*1 + $scope.six6*1 + $scope.six7*1 + $scope.six8*1 + $scope.six9*1 + $scope.six10*1 + $scope.six11*1;
+			
+			//total fours//
+			
+			$scope.totalfours = $scope.four1*1 + $scope.four2*1 + $scope.four3*1 + $scope.four4*1 + $scope.four5*1 + $scope.four6*1 + $scope.four7*1 + $scope.four8*1 + $scope.four9*1 + $scope.four10*1 + $scope.four11*1;
+			
+			//total over//
+			
+			$scope.totalover = ($scope.balls1*1 + $scope.balls2*1 + $scope.balls3*1 + $scope.balls4*1 + $scope.balls5*1 + $scope.balls6*1 + $scope.balls7*1 + $scope.balls8*1 + $scope.balls9*1 + $scope.balls10*1 + $scope.balls11*1)/6;
+					
+			//over//
+			
+			$scope.bover = $scope.bover1*1 + $scope.bover2*1 +$scope.bover3*1 +$scope.bover4*1 +$scope.bover5*1;
+			
+			//run//
+			
+			$scope.brun = $scope.brun1*1 + $scope.brun2*1 +$scope.brun3*1 +$scope.brun4*1 +$scope.brun5*1;
+			
+			//wicket//
+			
+			$scope.bwicket = $scope.bwicket1*1 + $scope.bwicket2*1 + $scope.bwicket3*1 + $scope.bwicket4*1 + $scope.bwicket5*1;
+			
+			//extras//
+			
+			$scope.extras = $scope.totalruns - $scope.brun;
+			
+			if ($scope.extras >0)			
+			{
+				$scope.extracolor = "tg";
+			}
+			else 
+			{
+				$scope.extracolor = "t";
+			}			
+		}
+			
+	});
+
+	app.config(function($routeProvider) {
+	
+		$routeProvider
+		.when("/", {
+			templateUrl : "wicket1.html"
+		})
+		.when("/wicket2", {
+			templateUrl : "wicket2.html"
+		})
+		.when("/wicket3", {
+			templateUrl : "wicket3.html"
+		})	
+		.when("/wicket4", {
+			templateUrl : "wicket3.html"
+		})	
+		.when("/wicket5", {
+			templateUrl : "wicket3.html"
+		})
+		
+});		
+</script>
+
+	
